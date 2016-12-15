@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      HTML Components
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color:#d3d3d3">
+  
+  <button ion-button color = "light" (click) = "displayPopup()"> Display Pop-up </button> <br>
+  <button ion-button color = "danger" (click) = "showConfirmation()"> Confirmation Alert </button> <br>
+  <button ion-button color = "secondary" (click) = "showLoader()"> Confirmation Alert </button> <br>
+  <ion-card>
+    <ion-card-header style="text-align: center">
+      card header
+    </ion-card-header>
+    <ion-card-content>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+       when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+         remaining essentially unchanged.
+    </ion-card-content>
+  </ion-card>
+
+<!-- Check Boxes -->
+
+<ion-item>
+  <ion-label>Daenerys Targaryen</ion-label>
+  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Arya Stark</ion-label>
+  <ion-checkbox></ion-checkbox>
+</ion-item> 
+<ion-item>
+  <ion-label>Tyron Lanistor</ion-label>
+  <ion-checkbox color="light" checked="true"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Sansa Stark</ion-label>
+  <ion-checkbox color = "danger" checked = "true" disabled="true"></ion-checkbox>
+</ion-item> 
+
+
+<!-- floating Buttons -->
+  <ion-fab top right edge>
+    <button ion-fab color="vibrant" mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab center middle>
+    <button ion-fab color="danger"><ion-icon name="md-share"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab color="primary"><ion-icon name="logo-vimeo"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <button ion-fab color="secondary"><ion-icon name="logo-facebook"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side="left">
+      <button ion-fab color="light"><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side="right">
+      <button ion-fab color="dark"><ion-icon name="logo-twitter"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+
+<!-- Events  -->
+ <ion-card (tap)="tapEvent($event)">
+    <ion-item>
+      Tapped: {{tap}} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (press)="pressEvent($event)">
+    <ion-item>
+      Pressed: {{press}} times
+    </ion-item>
+  </ion-card>
+<ion-card (swipe)="swipeEvent($event)">
+    <ion-item>
+      Swiped: {{swipe}} times
+    </ion-item>
+  </ion-card>
+
+
+</ion-content>
+
+
+

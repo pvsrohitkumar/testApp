@@ -1,0 +1,22 @@
+page-modal-popup {
+    .icon-close {
+        content : url(../../img/icon-b-4.svg);
+        float:right;
+        padding:1.2%;
+        margin-top: -6%;
+        margin-right: 3%;
+        width: 20px;
+        //margin:8%
+    }
+}
+
+.modal-wrapper {
+    position: absolute;
+    top: calc(50% - (20%));
+    left: calc(50% - (30%));
+    width: 65%;
+    height: 55%;
+}
+div.modal-wrapper{
+    transform: translateY(0%);
+}
